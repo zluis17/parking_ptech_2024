@@ -16,6 +16,8 @@ public class Registro {
     public cupo cupo; 
     public carro carro;
     public cliente cliente;
+    public Empleado empleado;
+
     
 
     //constructores
@@ -23,8 +25,10 @@ public class Registro {
     }
 
 
+
     public Registro(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFin, LocalTime horaFin, Long valor,
-            cupo cupo, carro carro, cliente cliente) {
+            org.ptech081.parking.entities.cupo cupo, org.ptech081.parking.entities.carro carro,
+            org.ptech081.parking.entities.cliente cliente, Empleado empleado) {
         this.fechaInicio = fechaInicio;
         this.horaInicio = horaInicio;
         this.fechaFin = fechaFin;
@@ -33,7 +37,12 @@ public class Registro {
         this.cupo = cupo;
         this.carro = carro;
         this.cliente = cliente;
-    } 
+        this.empleado = empleado;
+    }
+
+
+
+   
     
     
 
